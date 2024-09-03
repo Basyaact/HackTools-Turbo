@@ -1,6 +1,7 @@
 <div align="center">
   <img alt="logo_hack_tools" src="https://i.imgur.com/yoUssC7.png" />
-  <h1>Welcome to HackTools !</h1>
+  <h1>Welcome to HackTools !此项目为大型网络攻击需要的二开项目</h1>
+  <h1>We are the BLACKL0TUS TEAM</h1>
   <p>
     <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000&style=for-the-badge" />
     <a href="https://addons.mozilla.org/en-US/firefox/addon/hacktools" target="_blank">
@@ -160,12 +161,4 @@ Once you clicked on the button you just need to select the **dist folder** and t
 
 ## Authors
 
-👤 <a href="http://github.com/LasCC" alt="Github_account_Ludovic_COULON" target="_blank">**Ludovic COULON**</a> & <a href="http://github.com/rb-x" alt="Github_account_Riadh_BOUCHAHOUA" target="_blank">**Riadh BOUCHAHOUA**</a>
-
-## Show your support
-
-You can give a ⭐️ if this project helped you !
-
-Note that this project is maintained, developed and made available for **free**, you can offer us a coffee, it will be very **encouraging and greatly appreciated** 😊
-
-<a href="https://www.paypal.me/hacktoolsEXT" target="_blank"><img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="Paypal" style="height: 30px !important;width: auto !important"></a>
+👤 <a href="http://github.com/LasCC" alt="Github_account_Ludovic_COULON" target="_blank">**Ludovic COULON**</a> & <a href="http://github.com/rb-x" alt="Github_account_Riadh_BOUCHAHOUA" target="_blank">**Christian Basya(CN)**</a> & <a href="http://github.com/Basyaact" alt="Github_account_Ludovic_COULON" target="_blank">**Ludovic COULON**</a>
