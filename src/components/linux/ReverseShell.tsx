@@ -104,9 +104,9 @@ export default function ReverseShell () {
                     <Button
                         type="primary"
                         onClick={() => handleSearch( selectedKeys as string[], confirm, dataIndex )}
-                        icon={<SearchOutlined />}
+                        icon={<SearchOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />}
                         size="small"
-                        style={{ width: 90 }}
+                        style={{ width: 90 }} 
                     >
                         Search
                     </Button>
@@ -141,7 +141,7 @@ export default function ReverseShell () {
             </div>
         ),
         filterIcon: ( filtered: boolean ) => (
-            <SearchOutlined style={{ color: filtered ? '#1890ff' : undefined }} />
+            <SearchOutlined style={{ color: filtered ? '#1890ff' : undefined }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
         ),
         onFilter: ( value, record ) =>
             record[ dataIndex ]
@@ -282,7 +282,7 @@ export default function ReverseShell () {
                         <Col span={8}>
                             <Input
                                 maxLength={15}
-                                prefix={<WifiOutlined />}
+                                prefix={<WifiOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />}
                                 name='Ip adress'
                                 placeholder='IP Address or domain (ex: 212.212.111.222)'
                                 onChange={handleChange( 'ip' )}

@@ -4,5 +4,8 @@
 "workbench.colorCustomizations": {
     "minimap.background": "#272334FF",
     "scrollbar.shadow": "#272334FF"
-}
+},
+"cSpell.words": [
+    "antd"
+]
 }

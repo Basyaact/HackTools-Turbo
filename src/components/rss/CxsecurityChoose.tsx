@@ -1,16 +1,16 @@
 import React from 'react';
-import { Typography, Card, Col, Row, Button } from 'antd';
+import { Typography, Card, Col, Row, Button, Select, Input, Collapse } from 'antd';
 import { PageHeader } from '@ant-design/pro-layout';
 import { goTo } from 'react-chrome-extension-router';
-import { GithubOutlined } from '@ant-design/icons';
 import FeedRSS from './FeedRSS';
 import ExploitCX from './ExploitCX';
 import BugsCX from './BugsCX';
 import DorksCX from './DorksCX';
+import { GithubOutlined } from '@ant-design/icons';
 
 //const variables 
 const { Title } = Typography;
-const IconFont = createFromIconfontCN( { scriptUrl: [ './iconfont.js' ] } );
+const IconFont = createFromConfrontCN( { scriptUrl: [ './iconfont.js' ] } );
 const { Option } = Select;
 const { Search } = Input;
 const { Text } = Typography;
@@ -27,7 +27,7 @@ export default function CxsecurityChoose () {
                 title='CX Security Independent RSS'
                 extra={[
                     <Button href='https://cxsecurity.com' key='1' type='primary'>
-                        Visit orignal website
+                        Visit original website
                     </Button>
                 ]}
             />
@@ -90,10 +90,14 @@ export default function CxsecurityChoose () {
             <div style={{ textAlign: 'center' }}>
                 <Paragraph>You have a suggestion about the feed ?</Paragraph>
                 <Button href='https://github.com/LasCC/Hack-Tools/issues/new'
-                    target='blank' icon={<GithubOutlined />} type='link'>
+                    target='blank' icon={<GithubOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />} type='link'>
                     Give us your feedback
                 </Button>
             </div>
         </div>
     );
 }
+function createFromConfrontCN(arg0: { scriptUrl: string[]; }) {
+    throw new Error('Function not implemented.');
+}
+

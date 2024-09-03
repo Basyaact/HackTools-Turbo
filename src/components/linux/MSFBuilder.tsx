@@ -3,9 +3,6 @@ import { Input, Typography, Row, Divider, Select, Form, Col, Collapse } from 'an
 import PersistedState from 'use-persisted-state';
 import { MSFBuilder } from 'components/types/MSFBuilder';
 //MSF InBuilder
-import { Payloads } from 'components/types/Payloads';
-import { Encoder } from 'components/types/Encoder';
-import { Platform } from 'components/types/Platform';
 
 const { Title, Paragraph } = Typography;
 

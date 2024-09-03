@@ -127,7 +127,7 @@ export default function LinuxCommands () {
                     />
                     <br />
                     <Button href="https://gist.githubusercontent.com/LasCC/6f3838dc02f46b14e9dbc9bc0972407e/raw/8c29317645df2e1d39777e95df8cf7760458d4d0/misconfiguration.sh" target='blank' type='primary' style={{ marginBottom: 10, marginTop: 15 }}>
-                        <ArrowsAltOutlined style={{ marginRight: 5 }} />
+                        <ArrowsAltOutlined style={{ marginRight: 5 }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                         Download the script
                     </Button>
                 </Panel>

@@ -181,11 +181,11 @@ export default function CVESearch () {
                             </Text>
                         </Paragraph>
                         <Paragraph>
-                            <CloseCircleOutlined className='site-result-demo-error-icon' /> The value that you submitted{' '}
+                            <CloseCircleOutlined className='site-result-demo-error-icon' onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> The value that you submitted{' '}
                             <b>does not exist</b>.
                         </Paragraph>
                         <Paragraph>
-                            <CloseCircleOutlined className='site-result-demo-error-icon' /> The{' '}
+                            <CloseCircleOutlined className='site-result-demo-error-icon' onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> The{' '}
                             <b>API is in maintenance</b>, please try again.
                         </Paragraph>
                     </div>
