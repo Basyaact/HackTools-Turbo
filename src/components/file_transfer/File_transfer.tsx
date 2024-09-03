@@ -61,7 +61,7 @@ ftp -v -s:ftp.txt`
                         <Col span={12}>
                             <Input
                                 maxLength={15}
-                                prefix={<WifiOutlined />}
+                                prefix={<WifiOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />}
                                 name='Ip adress'
                                 placeholder='IP Address or domain (ex: 212.212.111.222)'
                                 onChange={handleChange( 'ip' )}
@@ -82,7 +82,7 @@ ftp -v -s:ftp.txt`
                     <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{ marginTop: 15 }}>
                         <Col span={12}>
                             <Input
-                                prefix={<FolderOutlined />}
+                                prefix={<FolderOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />}
                                 name='File name'
                                 placeholder='URL (ex: https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Recon/PowerView.ps1)'
                                 onChange={handleChange( 'target_file_name' )}
@@ -92,7 +92,7 @@ ftp -v -s:ftp.txt`
                         </Col>
                         <Col span={12}>
                             <Input
-                                prefix={<FileDoneOutlined />}
+                                prefix={<FileDoneOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />}
                                 name='File name'
                                 placeholder='Output file (ex: PowerView.ps1)'
                                 onChange={handleChange( 'output_file_name' )}
