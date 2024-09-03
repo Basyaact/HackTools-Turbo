@@ -116,6 +116,7 @@ export default function PowershellCommands () {
     const domain_gpo_modified = `Get-NetGPO -ComputerName computername.domain.com`;
     const domain_gpo_lastmodified = `Get-NetGPO -ComputerName computername.domain.com`;
     const domain_gpo_permissions = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_audit = `Get-NetGPO -ComputerName computername.domain.com`;
     //domain admins
     const domain_admin_members = `Get-NetGroupMember -GroupName "Domain Admins"`;
     const domain_admins_groups = `Get-NetGroup *admin*`;
