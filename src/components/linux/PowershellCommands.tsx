@@ -40,32 +40,106 @@ export default function PowershellCommands () {
     const domain_Policy = `Get-DomainPolicy`;
     const domain_OUs = `Get-NetOU`;
     const domain_trust = `Get-NetDomainTrust`;
+    const domain_controllers = `Get-NetDomainController`;
+    const domain_users = `Get-NetUser`;
+    const domain_groups = `Get-NetGroup`;
+    const domain_admins = `Get-NetGroupMember -GroupName "Domain Admins"`;
+    const domain_password_policy = `Get-NetDomainPasswordPolicy`;
+    const domain_password_complexity = `Get-NetDomainPasswordComplexity`;
+    const domain_password_history = `Get-NetDomainPasswordHistory`;
+    const domain_password_age = `Get-NetDomainPasswordAge`;
+    const domain_password_notreqd = `Get-NetDomainPasswordNotRequired`;
+    const domain_password_lastset = `Get-NetUser -PasswordNeverExpires`;
+    const domain_password_notchange = `Get-NetUser -PasswordNotRequired`;
+    const domain_password_enum = `Get-NetUser`;
+    const domain_password_harvest = `Find-UserField -SearchField Description -SearchTerm “pass”`;
+    const domain_gpo_enum = `Get-NetGPO`;
+    const domain_gpo_modified = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_lastmodified = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_permissions = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_audit = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_content = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_links = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_owner = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_name = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_path = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_status = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_version = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_list = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_search = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_permissions = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_audit = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_content = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_links = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_owner = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_name = `Get-NetGPO -ComputerName computername.domain.com`;
     // gpo
     const gpo_enum = `Get-NetGPO -ComputerName computername.domain.com`;
     // passwd enum
     const passwd_lastset = `Get-UserProperty -Properties pwdlastset`;
     const user_desc_harvest = `Find-UserField -SearchField Description -SearchTerm “pass”`;
-
+    const passwd_enum = `Get-NetUser`;
+    const passwd_notreqd = `Get-NetUser -PasswordNeverExpires`;
+    const passwd_age = `Get-NetUser -MaximumPasswordAge`;
+    const passwd_history = `Get-NetUser -PasswordHistoryLength`;
+    const passwd_complexity = `Get-NetDomainPasswordComplexity`;
+    const passwd_notchange = `Get-NetUser -PasswordNotRequired`;
+    const passwd_policy = `Get-NetDomainPasswordPolicy`;
+    const passwd_lastset = `Get-NetUser -PasswordNeverExpires`;
+    const passwd_harvest = `Find-UserField -SearchField Description -SearchTerm “pass”`;
+    const passwd_lastchange = `Get-NetUser -PasswordLastSet`;
+    const passwd_modified = `Get-NetUser -PasswordLastSet`;
+    const passwd_content = `Get-NetUser -PasswordLastSet`;
+    const passwd_links = `Get-NetUser -PasswordLastSet`;
+    const passwd_owner = `Get-NetUser -PasswordLastSet`;
+    const passwd_name = `Get-NetUser -PasswordLastSet`;
+    const passwd_path = `Get-NetUser -PasswordLastSet`;
+    const passwd_status = `Get-NetUser -PasswordLastSet`;
     //computers domain
     const domain_computers = `Get-NetComputer`;
     const domain_pingable_computers = `Get-NetComputer -Ping`;
     const domain_win7U_computers = `Get-NetComputer -OperatingSystem "Windows 7 Ultimate"`;
-
+    const domain_controllers = `Get-NetDomainController`;
+    const domain_users = `Get-NetUser`;
+    const domain_groups = `Get-NetGroup`;
+    const domain_admins = `Get-NetGroupMember -GroupName "Domain Admins"`;
+    const domain_password_policy = `Get-NetDomainPasswordPolicy`;
+    const domain_password_complexity = `Get-NetDomainPasswordComplexity`;
+    const domain_password_history = `Get-NetDomainPasswordHistory`;
+    const domain_password_age = `Get-NetDomainPasswordAge`;
+    const domain_password_notreqd = `Get-NetDomainPasswordNotRequired`;
+    const domain_password_lastset = `Get-NetUser -PasswordNeverExpires`;
+    const domain_password_notchange = `Get-NetUser -PasswordNotRequired`;
+    const domain_password_enum = `Get-NetUser`;
+    const domain_password_harvest = `Find-UserField -SearchField Description -SearchTerm “pass”`;
+    const domain_gpo_enum = `Get-NetGPO`;
+    const domain_gpo_modified = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_lastmodified = `Get-NetGPO -ComputerName computername.domain.com`;
+    const domain_gpo_permissions = `Get-NetGPO -ComputerName computername.domain.com`;
     //domain admins
     const domain_admin_members = `Get-NetGroupMember -GroupName "Domain Admins"`;
     const domain_admins_groups = `Get-NetGroup *admin*`;
     const local_admins = `Get-NetLocalGroup -ComputerName PCNAME-001`;
     const user_group_membership = `Get-NetGroup -UserName "username"`;
-
+    const user_local_groups = `Get-NetLocalGroup -UserName "username"`;
+    const user_group_membership = `Get-NetGroup -UserName "username"`;
     //acl
     const ACL_user_enum = `Get-ObjectAcl -SamAccountName "users" -ResolveGUIDs`;
     const ACL_gpoedit_rights = `Get-NetGPO | %{Get-ObjectAcl -ResolveGUIDs -Name $_.Name}`;
     const ACL_passwd_edit_rights = `Get-ObjectAcl -SamAccountName labuser -ResolveGUIDs -RightsFilter "ResetPassword"`;
-
+    const ACL_gpoedit_rights = `Get-NetGPO | %{Get-ObjectAcl -ResolveGUIDs -Name $_.Name}`;
+    const ACL_passwd_edit_rights = `Get-ObjectAcl -SamAccountName labuser -ResolveGUIDs -RightsFilter "ResetPassword"`;
+    const ACL_gpoedit_rights = `Get-NetGPO | %{Get-ObjectAcl -ResolveGUIDs -Name $_.Name}`;
     // dump user accounts 
     const local_recon_ldifde = `ldifde -d "OU=THING,DC=CHANGE,DC=ME" -p subtree -f dump.ldf`
     const local_recon_csvde = `csvde -d "OU=THING,DC=CHANGE,DC=ME" -p subtree -f dump.csv`
-
+    const domain_recon_ldifde = `ldifde -d "DC=CHANGE,DC=ME" -p subtree -f dump.ldf`
+    const domain_recon_csvde = `csvde -d "DC=CHANGE,DC=ME" -p subtree -f dump.csv`
+    const domain_recon_ldifde = `ldifde -d "DC=CHANGE,DC=ME" -p subtree -f dump.ldf`
+    const domain_recon_csvde = `csvde -d "DC=CHANGE,DC=ME" -p subtree -f dump.csv`
+    const domain_recon_ldifde = `ldifde -d "DC=CHANGE,DC=ME" -p subtree -f dump.ldf`
+    const domain_recon_csvde = `csvde -d "DC=CHANGE,DC=ME" -p subtree -f dump.csv`
+    const domain_recon_ldifde = `ldifde -d "DC=CHANGE,DC=ME" -p subtree -f dump.ldf`
     // Enumerate Domain Users
     const domain_user_enum = `$domainObj = [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain()
 $PDC = ($domainObj.PdcRoleOwner).Name
