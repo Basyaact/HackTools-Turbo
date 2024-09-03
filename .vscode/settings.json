@@ -1,4 +1,8 @@
 {
 "typescript.tsdk": "node_modules/typescript/lib",
-"liveServer.settings.port": 5501
+"liveServer.settings.port": 5501,
+"workbench.colorCustomizations": {
+    "minimap.background": "#272334FF",
+    "scrollbar.shadow": "#272334FF"
+}
 }

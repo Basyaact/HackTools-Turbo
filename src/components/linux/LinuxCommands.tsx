@@ -110,6 +110,7 @@ export default function LinuxCommands () {
             title: `touch "/var/www/html/--checkpoint=1"`
         }
     ];
+
     return (
         <div style={{ margin: 15 }}>
             <Title level={2} style={{ fontWeight: 'bold' }}>

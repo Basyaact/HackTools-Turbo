@@ -1,5 +1,7 @@
 import React from 'react';
 import { Typography, Divider, Space } from 'antd';
+const { Option } = Select;
+const { TextArea } = Input;
 
 const { Title, Paragraph, Text } = Typography;
 

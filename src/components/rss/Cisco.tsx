@@ -4,6 +4,11 @@ import { PageHeader } from '@ant-design/pro-layout';
 import { goTo } from 'react-chrome-extension-router';
 import { useQuery } from 'react-query';
 import FeedRSS from './FeedRSS';
+//const some important variable
+const { Paragraph } = Typography;
+const { Option } = Select;
+const { Meta } = Card;
+
 
 const { Title } = Typography;
 

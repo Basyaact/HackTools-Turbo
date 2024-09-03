@@ -20,6 +20,9 @@ import axios, { Method } from 'axios';
 import PersistedState from 'use-persisted-state';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import pretty from 'pretty';
+//import HTTP Components.
+import { IHTTP_UtilsProps } from 'components/types/IHTTP_UtilsProps';
+import { ContentProps } from 'components/types/ContentProps';
 
 const { Title, Paragraph } = Typography;
 const { TabPane } = Tabs;

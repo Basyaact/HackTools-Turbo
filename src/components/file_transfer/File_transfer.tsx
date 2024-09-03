@@ -5,7 +5,6 @@ import { WifiOutlined, createFromIconfontCN, FolderOutlined, FileDoneOutlined } 
 import { Ipv4TcpCacheState } from "components/types/Ipv4TcpCacheState";
 import Link from 'antd/es/typography/Link';
 
-
 const { Title, Paragraph, Text } = Typography;
 const IconFont = createFromIconfontCN( {
     scriptUrl: [ './iconfont.js' ]
@@ -19,6 +18,7 @@ export default function FileTransfer () {
         port: '',
         target_file_name: 'http://10.0.0.1/mimikatz.exe',
         output_file_name: 'mimikatz.exe',
+        shell: '/bin/sh'
     } );
 
     const handleChange = ( name: string ) => ( event: { target: { value: string } } ) => {

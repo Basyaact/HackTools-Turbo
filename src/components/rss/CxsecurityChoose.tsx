@@ -8,6 +8,14 @@ import ExploitCX from './ExploitCX';
 import BugsCX from './BugsCX';
 import DorksCX from './DorksCX';
 
+//const variables 
+const { Title } = Typography;
+const IconFont = createFromIconfontCN( { scriptUrl: [ './iconfont.js' ] } );
+const { Option } = Select;
+const { Search } = Input;
+const { Text } = Typography;
+const { Panel } = Collapse;
+const { Link } = Typography;
 const { Paragraph } = Typography;
 const { Meta } = Card;
 
