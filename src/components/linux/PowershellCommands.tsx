@@ -80,6 +80,20 @@ export default function PowershellCommands () {
     const domain_gpo_name = `Get-NetGPO -ComputerName computername.domain.com`;
     // gpo
     const gpo_enum = `Get-NetGPO -ComputerName computername.domain.com`;
+    const gpo_modified = `Get-NetGPO -ComputerName computername.domain.com`;
+    const gpo_lastmodified = `Get-NetGPO -ComputerName computername.domain.com`;
+    const gpo_permissions = `Get-NetGPO -ComputerName computername.domain.com`;
+    const gpo_audit = `Get-NetGPO -ComputerName computername.domain.com`;
+    const gpo_content = `Get-NetGPO -ComputerName computername.domain.com`;
+    const gpo_links = `Get-NetGPO -ComputerName computername.domain.com`;
+    const gpo_owner = `Get-NetGPO -ComputerName computername.domain.com`;
+    const gpo_name = `Get-NetGPO -ComputerName computername.domain.com`;
+    const gpo_path = `Get-NetGPO -ComputerName computername.domain.com`;
+    const gpo_status = `Get-NetGPO -ComputerName computername.domain.com`;
+    const gpo_version = `Get-NetGPO -ComputerName computername.domain.com`;
+    const gpo_list = `Get-NetGPO -ComputerName computername.domain.com`;
+    const gpo_search = `Get-NetGPO -ComputerName computername.domain.com`;
+    const gpo_permissions = `Get-NetGPO -ComputerName computername.domain.com`;
     // passwd enum
     const passwd_lastset = `Get-UserProperty -Properties pwdlastset`;
     const user_desc_harvest = `Find-UserField -SearchField Description -SearchTerm “pass”`;
