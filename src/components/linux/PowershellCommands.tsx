@@ -143,6 +143,10 @@ export default function PowershellCommands () {
     const user_group_membership = `Get-NetGroup -UserName "username"`;
     const user_local_groups = `Get-NetLocalGroup -UserName "username"`;
     const user_group_membership = `Get-NetGroup -UserName "username"`;
+    const user_local_groups = `Get-NetLocalGroup -UserName "username"`;
+    const user_group_membership = `Get-NetGroup -UserName "username"`;
+    const user_local_groups = `Get-NetLocalGroup -UserName "username"`;
+    const user_group_membership = `Get-NetGroup -UserName "username"`;
     //acl
     const ACL_user_enum = `Get-ObjectAcl -SamAccountName "users" -ResolveGUIDs`;
     const ACL_gpoedit_rights = `Get-NetGPO | %{Get-ObjectAcl -ResolveGUIDs -Name $_.Name}`;
@@ -150,9 +154,16 @@ export default function PowershellCommands () {
     const ACL_gpoedit_rights = `Get-NetGPO | %{Get-ObjectAcl -ResolveGUIDs -Name $_.Name}`;
     const ACL_passwd_edit_rights = `Get-ObjectAcl -SamAccountName labuser -ResolveGUIDs -RightsFilter "ResetPassword"`;
     const ACL_gpoedit_rights = `Get-NetGPO | %{Get-ObjectAcl -ResolveGUIDs -Name $_.Name}`;
+    const ACL_passwd_edit_rights = `Get-ObjectAcl -SamAccountName labuser -ResolveGUIDs -RightsFilter "ResetPassword"`;
+    const ACL_gpoedit_rights = `Get-NetGPO | %{Get-ObjectAcl -ResolveGUIDs -Name $_.Name}`;
+    const ACL_passwd_edit_rights = `Get-ObjectAcl -SamAccountName labuser -ResolveGUIDs -RightsFilter "ResetPassword"`;
     // dump user accounts 
     const local_recon_ldifde = `ldifde -d "OU=THING,DC=CHANGE,DC=ME" -p subtree -f dump.ldf`
     const local_recon_csvde = `csvde -d "OU=THING,DC=CHANGE,DC=ME" -p subtree -f dump.csv`
+    const domain_recon_ldifde = `ldifde -d "DC=CHANGE,DC=ME" -p subtree -f dump.ldf`
+    const domain_recon_csvde = `csvde -d "DC=CHANGE,DC=ME" -p subtree -f dump.csv`
+    const domain_recon_ldifde = `ldifde -d "DC=CHANGE,DC=ME" -p subtree -f dump.ldf`
+    const domain_recon_csvde = `csvde -d "DC=CHANGE,DC=ME" -p subtree -f dump.csv`
     const domain_recon_ldifde = `ldifde -d "DC=CHANGE,DC=ME" -p subtree -f dump.ldf`
     const domain_recon_csvde = `csvde -d "DC=CHANGE,DC=ME" -p subtree -f dump.csv`
     const domain_recon_ldifde = `ldifde -d "DC=CHANGE,DC=ME" -p subtree -f dump.ldf`

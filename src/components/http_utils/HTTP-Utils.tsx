@@ -144,7 +144,7 @@ export default function LinuxCommands() {
                 </Col>
                 <Col>
                     <Select
-                        defaultValue="http://"
+                        defaultValue="http://evil-sideload-file.com/path/to/malicious-file"
                         style={{ width: '100%' }}
                         value={values.protocol}
                         placeholder="http://"
