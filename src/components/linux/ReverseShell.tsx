@@ -89,13 +89,13 @@ export default function ReverseShell () {
         filterDropdown: ( { setSelectedKeys, selectedKeys, confirm, clearFilters, close } ) => (
             <div style={{ padding: 8 }} onKeyDown={( e ) => e.stopPropagation()}>
                 <Input
-                    ref={searchInput}
-                    placeholder={`Search ${ dataIndex }`}
-                    value={selectedKeys[ 0 ]}
-                    onChange={( e ) => setSelectedKeys( e.target.value ? [ e.target.value ] : [] )}
-                    onPressEnter={() => handleSearch( selectedKeys as string[], confirm, dataIndex )}
-                    style={{ marginBottom: 8, display: 'block' }}
-                />
+                ref={searchInput}
+                placeholder={`Search ${dataIndex}`}
+                value={typeof selectedKeys[0] === 'string' ? selectedKeys[0] : ''}  // 检查类型，确保 value 是 string
+                onChange={(e) => setSelectedKeys(e.target.value ? [e.target.value] : [])}
+                onPressEnter={() => handleSearch(selectedKeys as string[], confirm, dataIndex)}
+                style={{ marginBottom: 8, display: 'block' }}
+            />
                 <Space>
                     <Button
                         type="primary"

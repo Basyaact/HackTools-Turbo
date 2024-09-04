@@ -2,6 +2,8 @@ import React from 'react';
 import { Typography, Divider, Space, Select, Input } from 'antd';
 const { Option } = Select;
 const { TextArea } = Input;
+const InputSearch = Input.Search;
+const { Search } = Input;
 
 const { Title, Paragraph, Text } = Typography;
 

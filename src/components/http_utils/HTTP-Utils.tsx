@@ -172,12 +172,12 @@ export default function LinuxCommands () {
                     />
                 </Col>
                 <Col>
-                    <Button type='primary' onClick={() => fetchData()} icon={<SendOutlined />}>
+                    <Button type='primary' onClick={() => fetchData()} icon={<SendOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />}>
                         Send
                     </Button>
                 </Col>
                 <Col>
-                    <Button type='link' danger icon={<DeleteOutlined />} onClick={() => handleDelete()} />
+                    <Button type='link' danger icon={<DeleteOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />} onClick={() => handleDelete()} />
                 </Col>
             </Row>
             {content != undefined ? (
@@ -284,7 +284,7 @@ export default function LinuxCommands () {
                         showIcon
                     />
                     <Button
-                        icon={<FullscreenOutlined style={{ marginRight: 5 }} />}
+                        icon={<FullscreenOutlined style={{ marginRight: 5 }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />}
                         style={{ marginTop: 15 }}
                         type='link'
                         danger
@@ -294,7 +294,7 @@ export default function LinuxCommands () {
                         </a>
                     </Button>
                     <Button
-                        icon={<ArrowsAltOutlined style={{ marginTop: 5 }} />}
+                        icon={<ArrowsAltOutlined style={{ marginTop: 5 }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />}
                         onClick={() => windowMode()}
                         type='link'
                     >

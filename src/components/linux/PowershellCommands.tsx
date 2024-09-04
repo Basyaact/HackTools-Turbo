@@ -1,10 +1,15 @@
 import React from 'react';
-import { Typography, Divider, Button, message } from 'antd';
+import { Typography, Divider, Button, message, Select, Input } from 'antd';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { vs2015 } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import Clipboard from 'react-clipboard.js';
 import { CopyOutlined } from '@ant-design/icons';
-
+import PersistedState from 'use-persisted-state';
+const { Option } = Select;
+const { TextArea } = Input;
+const successInfoReverseShell = () => {
+    message.success( 'The script has been copied successfully !' );
+};
 const { Title, Paragraph, Text } = Typography;
 
 export default function PowershellCommands () {
