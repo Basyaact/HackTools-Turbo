@@ -12,7 +12,10 @@ import {
     Descriptions,
     Modal,
     Tabs,
-    Alert
+    Alert,
+    Card,
+    Tooltip,
+    Spin
 } from 'antd';
 import { SendOutlined, FullscreenOutlined, ArrowsAltOutlined, DeleteOutlined } from '@ant-design/icons';
 import { vs2015 } from 'react-syntax-highlighter/dist/esm/styles/hljs';
@@ -20,13 +23,13 @@ import axios, { Method } from 'axios';
 import createPersistedState from 'use-persisted-state';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import pretty from 'pretty';
-import { ContentProps } from 'components/types/ContentProps';
-import { HttpUrlState } from 'components/types/HttpUrlState';
+import { ContentProps } from 'components/types/MSFBuilder';
+import { HttpUrlState } from 'components/types/MSFBuilder';
 import { MSFBuilder } from 'components/types/MSFBuilder';
-import { Payloads } from 'components/types/Payloads';
-import { Encoder } from 'components/types/Encoder';
-import { Platform } from 'components/types/Platform';
-import { MsfVenomBuilder } from 'components/types/MsfVenomBuilder';
+import { Payloads } from 'components/types/MSFBuilder';
+import { Encoder } from 'components/types/MSFBuilder';
+import { Platform } from 'components/types/MSFBuilder';
+import { MSFBuilder } from 'components/types/MSFBuilder';
 
 const useHttpUrlState = createPersistedState('http_url_repeater'); // 修改为钩子调用
 const { Title, Paragraph } = Typography;
