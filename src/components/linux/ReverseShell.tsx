@@ -6,10 +6,6 @@ import PersistedState from 'use-persisted-state';
 import { Ipv4TcpCacheState } from 'components/types/Ipv4TcpCacheState';
 import { ColumnType, FilterConfirmProps, FilterValue, SorterResult } from 'antd/es/table/interface';
 import Highlighter from 'react-highlight-words';
-import copy from 'copy-to-clipboard';
-import { Base64 } from 'js-base64';
-import { URLSearchParams } from 'url';
-import { useLocation } from 'react-router-dom';
 
 
 const { Title, Paragraph, Text } = Typography;
