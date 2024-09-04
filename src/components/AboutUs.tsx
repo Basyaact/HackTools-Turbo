@@ -13,14 +13,14 @@ export default function AboutUs () {
                     margin: 15
                 }}
             >
-                About us
+                关于我们
             </Title>
             <Paragraph
                 style={{
                     margin: 15
                 }}
             >
-                Our story of two students creating this app
+               此项目为Hack-tools的二开项目，皆在帮助有关部门实现反渗透或渗透，此项目为更强力的二开，会引入人工智能作为自动化渗透的一部分。
             </Paragraph>
             <Divider dashed />
             <div
