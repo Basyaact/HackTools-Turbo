@@ -20,6 +20,13 @@ import axios, { Method } from 'axios';
 import createPersistedState from 'use-persisted-state';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import pretty from 'pretty';
+import { ContentProps } from 'components/types/ContentProps';
+import { HttpUrlState } from 'components/types/HttpUrlState';
+import { MSFBuilder } from 'components/types/MSFBuilder';
+import { Payloads } from 'components/types/Payloads';
+import { Encoder } from 'components/types/Encoder';
+import { Platform } from 'components/types/Platform';
+import { MsfVenomBuilder } from 'components/types/MsfVenomBuilder';
 
 const useHttpUrlState = createPersistedState('http_url_repeater'); // 修改为钩子调用
 const { Title, Paragraph } = Typography;
@@ -155,12 +162,12 @@ export default function LinuxCommands() {
                     />
                 </Col>
                 <Col>
-                    <Button type="primary" onClick={fetchData} icon={<SendOutlined />}>
+                    <Button type="primary" onClick={fetchData} icon={<SendOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />}>
                         Send
                     </Button>
                 </Col>
                 <Col>
-                    <Button type="link" danger icon={<DeleteOutlined />} onClick={handleDelete} />
+                    <Button type="link" danger icon={<DeleteOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />} onClick={handleDelete} />
                 </Col>
             </Row>
 
@@ -213,12 +220,12 @@ export default function LinuxCommands() {
                         type="info"
                         showIcon
                     />
-                    <Button icon={<FullscreenOutlined />} style={{ marginTop: 15 }} type="link" danger>
+                    <Button icon={<FullscreenOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />} style={{ marginTop: 15 }} type="link" danger>
                         <a href={target} style={{ color: '#a61d24' }} rel="noreferrer noopener" target="_blank">
                             Fullscreen mode
                         </a>
                     </Button>
-                    <Button icon={<ArrowsAltOutlined />} onClick={windowMode} type="link">
+                    <Button icon={<ArrowsAltOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />} onClick={windowMode} type="link">
                         Pop-up mode
                     </Button>
                 </div>
