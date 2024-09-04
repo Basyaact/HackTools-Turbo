@@ -90,7 +90,7 @@ const Base64Encode = () => {
                 />
                 <Clipboard component='a' data-clipboard-text={output}>
                     <Button type='primary' style={{ marginBottom: 10, marginTop: 15 }} onClick={successPayload}>
-                        <CopyOutlined /> Copy
+                        <CopyOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Copy
                     </Button>
                 </Clipboard>
                 <Button
@@ -99,7 +99,7 @@ const Base64Encode = () => {
                     style={{ marginBottom: 10, marginTop: 15, marginLeft: 15 }}
                     onClick={() => setOutput( '' )}
                 >
-                    <ClearOutlined /> Clear
+                    <ClearOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Clear
                 </Button>
             </div>
         </div>

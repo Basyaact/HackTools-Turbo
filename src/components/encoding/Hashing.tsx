@@ -116,7 +116,7 @@ const HashEncode = () => {
                 />
                 <Dropdown overlay={menu}>
                     <a className='ant-dropdown-link'>
-                        {hashname} <DownOutlined style={{ padding: 10 }} />
+                        {hashname} <DownOutlined style={{ padding: 10 }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                     </a>
                 </Dropdown>
                 <Button
@@ -137,12 +137,12 @@ const HashEncode = () => {
                 <pre><Text>Cryptographic Hash Algorithm : {hashname}</Text></pre>
                 <Clipboard component='a' data-clipboard-text={output}>
                     <Button type='primary' style={{ marginBottom: 10, marginTop: 15 }} onClick={successInfoHashing}>
-                        <CopyOutlined /> Copy
+                        <CopyOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Copy
                     </Button>
                 </Clipboard>
                 <Button type='dashed' style={{ marginBottom: 10, marginTop: 15, marginLeft: 10 }}>
                     <a href='https://crackstation.net/' target='_blank' rel='noopener noreferrer'>
-                        <ArrowsAltOutlined /> Crack Station
+                        <ArrowsAltOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Crack Station
                     </a>
                 </Button>
             </div>
