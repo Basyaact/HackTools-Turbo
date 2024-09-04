@@ -243,11 +243,11 @@ export default function LayoutApp ( props: {
                         {props.children}
                     </Content>
                     <Footer style={{ textAlign: 'center' }}>
-                        <CopyrightCircleOutlined /> Hack Tools - The all in one Red team browser extension for web
+                        <CopyrightCircleOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Hack Tools - The all in one Red team browser extension for web
                         pentesters
                         <Paragraph style={{ textAlign: 'center' }}>Ludovic COULON - Riadh BOUCHAHOUA</Paragraph>
                         <pre style={{ textAlign: 'center' }}>HackTools Version - 0.5.0</pre>
-                        <Button icon={<FullscreenOutlined style={{ margin: 5 }} />} type='link'>
+                        <Button icon={<FullscreenOutlined style={{ margin: 5 }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />} type='link'>
                             <a href={target} rel='noreferrer noopener' target='_blank'>
                                 Fullscreen mode
                             </a>
@@ -267,7 +267,7 @@ export default function LayoutApp ( props: {
                                 },
                             ]}
                         />
-                        <Button icon={<ArrowsAltOutlined style={{ margin: 5 }} />} onClick={() => windowMode()} type='link'>
+                        <Button icon={<ArrowsAltOutlined style={{ margin: 5 }} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />} onClick={() => windowMode()} type='link'>
                             Pop-up mode
                         </Button>
                     </Footer>

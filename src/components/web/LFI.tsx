@@ -90,7 +90,7 @@ export default function LFI () {
                         onClick={successInfoReverseShell}
                         style={{ marginBottom: 10, marginTop: 15 }}
                     >
-                        <CopyOutlined /> Copy the payload
+                        <CopyOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> Copy the payload
                     </Button>
                 </Clipboard>
                 <Clipboard component='a' data-clipboard-text={encodeURI( directoryTraversal )}>
@@ -99,7 +99,7 @@ export default function LFI () {
                         onClick={successInfoEncodeURL}
                         style={{ marginBottom: 10, marginTop: 15, marginLeft: 15 }}
                     >
-                        <LinkOutlined /> URL encoded
+                        <LinkOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> URL encoded
                     </Button>
                 </Clipboard>
             </div>
@@ -121,7 +121,7 @@ export default function LFI () {
                         onClick={successInfoReverseShell}
                         style={{ marginBottom: 10, marginTop: 15 }}
                     >
-                        <CopyOutlined />
+                        <CopyOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                         Copy the payload
                     </Button>
                 </Clipboard>
@@ -131,7 +131,7 @@ export default function LFI () {
                         onClick={successInfoEncodeURL}
                         style={{ marginBottom: 10, marginTop: 15, marginLeft: 15 }}
                     >
-                        <LinkOutlined /> URL encoded
+                        <LinkOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> URL encoded
                     </Button>
                 </Clipboard>
             </div>
@@ -153,7 +153,7 @@ export default function LFI () {
                         onClick={successInfoReverseShell}
                         style={{ marginBottom: 10, marginTop: 15 }}
                     >
-                        <CopyOutlined />
+                        <CopyOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                         Copy the payload
                     </Button>
                 </Clipboard>
@@ -163,7 +163,7 @@ export default function LFI () {
                         onClick={successInfoEncodeURL}
                         style={{ marginBottom: 10, marginTop: 15, marginLeft: 15 }}
                     >
-                        <LinkOutlined /> URL encoded
+                        <LinkOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> URL encoded
                     </Button>
                 </Clipboard>
             </div>
@@ -185,7 +185,7 @@ export default function LFI () {
                         onClick={successInfoReverseShell}
                         style={{ marginBottom: 10, marginTop: 15 }}
                     >
-                        <CopyOutlined />
+                        <CopyOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                         Copy the payload
                     </Button>
                 </Clipboard>
@@ -195,7 +195,7 @@ export default function LFI () {
                         onClick={successInfoEncodeURL}
                         style={{ marginBottom: 10, marginTop: 15, marginLeft: 15 }}
                     >
-                        <LinkOutlined /> URL encoded
+                        <LinkOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} /> URL encoded
                     </Button>
                 </Clipboard>
             </div>
