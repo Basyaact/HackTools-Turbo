@@ -2,20 +2,15 @@
   <img alt="logo_hack_tools" src="https://i.imgur.com/yoUssC7.png" />
   <h1>Welcome to HackTools !此项目为大型网络攻击需要的二开项目</h1>
   <h1>We are the BLACKL0TUS TEAM</h1>
-  <h1>正在开发中，除了内部人员，您无法部署或使用</h1>
-  
+  <h1>正在开发中，除了内部人员，您无法部署或使用</h1> 
+  <h1>Under development, you cannot deploy or use it unless you are an internal member.</h1>
+  <h1>In Entwicklung, Sie können es nur als internes Mitglied bereitstellen oder verwenden.</h1>
+  <h1>En cours de développement, vous ne pouvez pas le déployer ou l'utiliser à moins d'être un membre interne.</h1>
+  <h1>開発中です。内部関係者以外は、展開や使用はできません。</h1>
+  <h1>개발 중이며, 내부 관계자가 아니면 배포하거나 사용할 수 없습니다.</h1>
+  <h1>En desarrollo, no puede desplegarlo ni utilizarlo a menos que sea un miembro interno.</h1>
+  <h1>Em desenvolvimento, você não pode implantar ou usar a menos que seja um membro interno.</h1>
   <p>
-  >[!NOTE]  
->Dear Users,
->
->We're excited to announce a major revamp of our app! Due to recent changes and multiple complications with the browser extension environment, we have decided to develop HackTools as a web application moving forward.
->
->To keep you engaged, we have uploaded our latest browser extension build alpha at this link: [https://hacktools.sh](https://hacktools.sh/)
->
->Stay tuned for exciting new features and improvements coming soon!
->
->Thank you for your support.
-
 ---
 
 ### The all-in-one browser extension for **offensive security professionals**
@@ -72,3 +67,4 @@ To open the command palette, you can use the shortcut <kbd>CTRL</kbd> + <kbd>K</
 ## Authors
 
 👤 <a href="http://github.com/LasCC" alt="Github_account_Ludovic_COULON" target="_blank">**Ludovic COULON**</a> & <a href="http://github.com/rb-x" alt="Github_account_Riadh_BOUCHAHOUA" target="_blank">**Christian Basya(CN)**</a> & <a href="http://github.com/Basyaact" alt="Github_account_Ludovic_COULON" target="_blank">**Ludovic COULON**</a>
+
