@@ -32,11 +32,11 @@ export default function FeedRSS () {
                         cover={<img alt='exploit-db_website_homepage' src='https://i.imgur.com/ST3cgmI.png' />}
                         actions={[
                             <Tooltip title='Watch the feed'>
-                                <EyeOutlined key='goto_page' onClick={() => goTo( ExploitDB )} />
+                                <EyeOutlined key='goto_page' onClick={() => goTo(ExploitDB)} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                             </Tooltip>,
                             <Tooltip title='Website link'>
                                 <a href='https://exploit-db.com' rel='noreferrer noopener' target='_blank'>
-                                    <LinkOutlined key='website_link' />
+                                    <LinkOutlined key='website_link' onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                                 </a>
                             </Tooltip>
                         ]}
@@ -59,7 +59,7 @@ export default function FeedRSS () {
                         cover={<img alt='cisco_image_logo' src='https://i.imgur.com/8EWAc2t.png' />}
                         actions={[
                             <Tooltip title='Watch the feed'>
-                                <EyeOutlined key='goto_page' onClick={() => goTo( Cisco )} />
+                                <EyeOutlined key='goto_page' onClick={() => goTo(Cisco)} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                             </Tooltip>,
                             <Tooltip title='Website link'>
                                 <a
@@ -67,7 +67,7 @@ export default function FeedRSS () {
                                     rel='noreferrer noopener'
                                     target='_blank'
                                 >
-                                    <LinkOutlined key='website_link' />
+                                    <LinkOutlined key='website_link' onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                                 </a>
                             </Tooltip>
                         ]}
@@ -92,11 +92,11 @@ export default function FeedRSS () {
                         cover={<img alt='cve_image_logo' src='https://i.imgur.com/AtKXVuk.png' />}
                         actions={[
                             <Tooltip title='Watch the feed'>
-                                <EyeOutlined key='goto_page' onClick={() => goTo( cve )} />
+                                <EyeOutlined key='goto_page' onClick={() => goTo(cve)} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                             </Tooltip>,
                             <Tooltip title='Website link'>
                                 <a href='https://www.cve-search.org/' rel='noreferrer noopener' target='_blank'>
-                                    <LinkOutlined key='website_link' />
+                                    <LinkOutlined key='website_link' onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                                 </a>
                             </Tooltip>
                         ]}
@@ -121,11 +121,11 @@ export default function FeedRSS () {
                         cover={<img alt='cve_image_logo' src='https://i.imgur.com/agGXTkQ.jpg' />}
                         actions={[
                             <Tooltip title='Watch the feed'>
-                                <EyeOutlined key='goto_page' onClick={() => goTo( cxsecurity_choose )} />
+                                <EyeOutlined key='goto_page' onClick={() => goTo(cxsecurity_choose)} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                             </Tooltip>,
                             <Tooltip title='Website link'>
                                 <a href='https://cxsecurity.com//' rel='noreferrer noopener' target='_blank'>
-                                    <LinkOutlined key='website_link' />
+                                    <LinkOutlined key='website_link' onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
                                 </a>
                             </Tooltip>
                         ]}
@@ -142,7 +142,7 @@ export default function FeedRSS () {
             </Row>
             <div style={{ textAlign: 'center' }}>
                 <Paragraph>You have a suggestion about the feed ?</Paragraph>
-                <Button icon={<GithubOutlined />} type='link'>
+                <Button icon={<GithubOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />} type='link'>
                     <a
                         href='https://github.com/LasCC/Hack-Tools/issues/new'
                         rel='noreferrer noopener'
