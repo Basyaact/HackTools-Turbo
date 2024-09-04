@@ -2,6 +2,8 @@
   <img alt="logo_hack_tools" src="https://i.imgur.com/yoUssC7.png" />
   <h1>Welcome to HackTools !此项目为大型网络攻击需要的二开项目</h1>
   <h1>We are the BLACKL0TUS TEAM</h1>
+  <h1>正在开发中，除了内部人员，您无法部署或使用</h1>
+  
   <p>
   >[!NOTE]  
 >Dear Users,
