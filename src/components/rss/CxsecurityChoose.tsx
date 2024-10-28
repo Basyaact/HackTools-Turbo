@@ -18,7 +18,7 @@ const { Panel } = Collapse;
 const { Link } = Typography;
 const { Paragraph } = Typography;
 const { Meta } = Card;
-
+const { TextArea } = Input;
 export default function CxsecurityChoose () {
     return (
         <div>

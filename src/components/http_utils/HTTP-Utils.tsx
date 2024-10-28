@@ -1,4 +1,10 @@
 import React, { useState } from 'react';
+
+type ContentProps = {
+    status: number;
+    statusText: string;
+    data: string;
+};
 import {
     Button,
     Typography,
@@ -23,12 +29,6 @@ import axios, { Method } from 'axios';
 import createPersistedState from 'use-persisted-state';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import pretty from 'pretty';
-import { ContentProps } from 'components/types/MSFBuilder';
-import { HttpUrlState } from 'components/types/MSFBuilder';
-import { MSFBuilder } from 'components/types/MSFBuilder';
-import { Payloads } from 'components/types/MSFBuilder';
-import { Encoder } from 'components/types/MSFBuilder';
-import { Platform } from 'components/types/MSFBuilder';
 import { MSFBuilder } from 'components/types/MSFBuilder';
 
 const useHttpUrlState = createPersistedState('http_url_repeater'); // 修改为钩子调用
@@ -36,6 +36,11 @@ const { Title, Paragraph } = Typography;
 const { TabPane } = Tabs;
 const { TextArea } = Input;
 const { Option } = Select;
+type HttpUrlState = {
+    url: string;
+    protocol: string;
+    type: string;
+};
 
 export default function LinuxCommands() {
     const [isModalVisible, setIsModalVisible] = useState(false);
@@ -50,7 +55,7 @@ export default function LinuxCommands() {
             type: 'popup',
         });
     };
-
+    
     const target = window.location.href;
     const showModal = () => {
         setIsModalVisible(true);
@@ -63,12 +68,12 @@ export default function LinuxCommands() {
         url: '',
         protocol: 'http://',
         type: 'GET',
-    });
+    });  // 添加类型断言
 
     const handleChange = (name: string) => (event: { target: { value: string } }) => {
         setValues({ ...values, [name]: event.target.value });
     };
-
+    
     const handleChangeSelect = (name: string) => (event: string) => {
         setValues({ ...values, [name]: event });
     };
@@ -88,10 +93,11 @@ export default function LinuxCommands() {
         setValues({ ...values, url: '' });
     };
 
+    
     const fetchData = async () => {
         message.loading({ content: 'Loading...', key });
         setLoading(true);
-
+//
         try {
             const res = await axios({
                 method: values.type as Method,
@@ -120,7 +126,7 @@ export default function LinuxCommands() {
                 HTTP Repeater
             </Title>
             <Paragraph style={{ marginLeft: 15 }}>
-                HTTP Repeater is a simple tool for manually manipulating and reissuing individual HTTP and WebSocket
+                HTTP Repeater is a simple tool for manually manipulating and reissuing individual HTTP and WebSocket.
                 messages, and analyzing the application's responses.
             </Paragraph>
             <Divider dashed />
